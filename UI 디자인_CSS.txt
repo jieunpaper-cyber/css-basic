@@ -1,0 +1,32 @@
+font-family: "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+-> Pretendard GOV 메인은 이거인데
+-> 없으면 뒤로, 또 그것도 없으면 뒤에 걸로 가는 것
+
+많이 쓰는 폰트
+-Noto-sans KR
+-Pretendard
+-Roboto
+-Inter
+
+사용성이 좋은 사이트라면, 폰트는 2개 정도를 쓰는 게 적당함
+-> 국문 1개, 영문 1개
+
+아니면 좀 양보해서
+국문, 영문, 포인트 글꼴
+이렇게 3개 정도
+
+내가 폰트를 새로 다운해서 적용시켰을 시,
+사용자의 컴퓨터에도 그 폰트가 있다는 보장이 없기 때문에,
+배포할 때 폰트도 같이 배포함.
+
+
+ttf, otf : 설치용
+-> 윈도우에 설치하는 폰트 파일
+-> 근데 그대로 넣기엔 용량이 너무 큼
+
+woff, woff2 : 웹 폰트
+
+(보충)
+
+속성 값;
+-> ;가 있으면 그 값이 끝났다는 뜻
