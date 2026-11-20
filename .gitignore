@@ -1,0 +1,46 @@
+# 환경 변수 및 자격 증명
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials*.json
+secrets*.json
+*.secret
+id_rsa*
+id_ed25519*
+
+# 로그 및 임시 파일
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 운영체제 및 편집기 파일
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# 패키지 및 빌드 산출물
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.py[cod]
+
+# 로컬 데이터베이스 및 백업
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.backup

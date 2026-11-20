@@ -1,5 +1,4 @@
 /* CSS 초기화 */
-
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +35,6 @@ body {
   letter-spacing: -0.02em;
   background-color: #fff;
 }
-
 ul,
 li {
   list-style: none;
@@ -51,7 +49,6 @@ img {
   vertical-align: middle;
   border: 0;
 }
-
 button {
   margin: 0;
   padding: 0;
@@ -70,9 +67,11 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* styling */
 .wrap {
   width: 100%;
 }
+/* header styling start */
 .header {
   position: relative;
   width: 100%;
@@ -90,7 +89,6 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   position: relative;
 }
@@ -134,7 +132,13 @@ button:focus-visible {
   line-height: 1;
 }
 .depth2-wrap {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #b4adad;
+  z-index: 1;
 }
 
 .header-util {
@@ -145,13 +149,12 @@ button:focus-visible {
   gap: 12px;
 }
 .util-sub {
-  position: relative;
+  position: relative;https://korean.visitkorea.or.kr/main/main.do w
   display: flex;
   align-items: center;
   gap: 4px;
   height: 100%;
 }
-
 .language-wrap {
   position: relative;
   background-color: blueviolet;
@@ -162,19 +165,42 @@ button:focus-visible {
   align-items: center;
   height: 100%;
 }
-
 .language-layer {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 38px;
   background-color: #fff;
 }
+/* header styling end */
 
+/* main styling start */
 .main {
   width: 100%;
   background-color: wheat;
 }
+.sw-hero .swiper-slide{
+  position: relative;
+  width: 940px;
+  height: 626px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.hero-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* main styling end */
+
+/* footer styling start */
 .footer {
   width: 100%;
   background-color: violet;
 }
+/* footer styling end */
+
