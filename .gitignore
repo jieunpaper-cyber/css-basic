@@ -1,46 +1,60 @@
-# 환경 변수 및 자격 증명
+# ================================
+# 민감한 정보 (절대 올리면 안 되는 것)
+# ================================
+# 환경 변수 파일 (API 키, 비밀번호 등)
 .env
 .env.*
 !.env.example
-!.env.sample
+
+# 인증서 / 개인 키
 *.pem
 *.key
 *.p12
 *.pfx
-*.keystore
-credentials*.json
-secrets*.json
-*.secret
 id_rsa*
 id_ed25519*
 
-# 로그 및 임시 파일
-*.log
-*.tmp
-*.temp
-*.swp
-*.swo
-*~
+# 인증 정보 파일
+credentials*.json
+secrets*.json
+*.secret
 
-# 운영체제 및 편집기 파일
-.DS_Store
-Thumbs.db
-Desktop.ini
-.vscode/
-.idea/
+# Claude Code 개인 설정 (공유용 설정인 .claude/settings.json은 올라감)
 .claude/settings.local.json
 
-# 패키지 및 빌드 산출물
-node_modules/
-dist/
-build/
-coverage/
-__pycache__/
-*.py[cod]
+# ================================
+# 운영체제가 자동으로 만드는 파일
+# ================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# 로컬 데이터베이스 및 백업
-*.sqlite
-*.sqlite3
-*.db
+# macOS
+.DS_Store
+._*
+
+# ================================
+# 편집기 설정
+# ================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# ================================
+# 나중에 npm 등을 쓰게 될 때 대비
+# ================================
+node_modules/
+npm-debug.log*
+*.log
+dist/
+
+# ================================
+# 개인 메모 / 임시 파일
+# ================================
+*.tmp
 *.bak
-*.backup
+private/
